@@ -1,6 +1,6 @@
 body {
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue',
-    Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   font-size: 22px;
   margin: 0;
@@ -17,6 +17,7 @@ header {
 header ul {
   list-style: none;
   margin: 0;
+  padding-left: 200px;
 }
 
 header ul li {
@@ -34,4 +35,24 @@ header ul li a {
 
 header ul li a:hover {
   border-bottom: 1px solid #333;
+}
+
+.visible-hidden {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+  height: 1px;
+  width: 1px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.visible-hidden:active,
+.visible-hidden:focus,
+.visible-hidden:hover {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+  overflow: visible;
 }
